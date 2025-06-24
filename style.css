@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #171717;
+  color: white;
+  position: relative;
+}
+.hero-content :last-child {
+  color: aliceblue;
+  background-color: #04b4ff;
+}
+
+.left {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.right ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.right a {
+  color: rgb(255, 255, 255); /* Default color */
+  text-decoration: none;
+}
+
+.right a:hover {
+  color: rgb(17, 136, 255);
+}
+
+.right ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* Toggle hamburger to cross */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .right {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #171717;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .right.active {
+    display: flex;
+  }
+
+  .right ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.hero,
+.about-section,
+.skill-section,
+.project-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0 10%;
+  background-color: rgb(255, 255, 255);
+  font-family: "fira code";
+  border-bottom: 2px solid blue;
+  box-shadow: 10px 10px 20px rgba(0, 0, 255, 0.3);
+}
+
+.hero-content > * {
+  margin-bottom: 2rem;
+}
+
+.about-section-content > * {
+  margin-bottom: 2rem;
+}
+
+.skill-section-content > * {
+  margin-bottom: 2rem;
+}
+
+.project-section-content > * {
+  margin-bottom: 2rem;
+}
+.skill-section-content img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.imageOn {
+  /* min-width: 300px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+}
+
+.imageOn li {
+  border-radius: 6px;
+  font-size: 10px;
+  width: 120px;
+  padding: 10px;
+
+  background-color: #ffffff;
+}
+
+button,
+a {
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 4px 4px;
+}
+
+.project-section img {
+  width: 240px;
+}
+
+.project1,
+.project2,
+.project3 {
+  border-bottom: 2px solid red;
+  text-align: start;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  padding: 10px 10px;
+  font-family: monospace;
+  background-color: black;
+  color: aliceblue;
+  font-size: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  .hero,
+  .about-section,
+  .skill-section,
+  .project-section {
+    font-size: 1rem;
+    text-align: start;
+  }
+
+  .imageOn {
+    gap: 0px 0px;
+  }
+
+  .imageOn img {
+    width: 60px;
+    height: auto;
+  }
+
+  .project-section img {
+    width: 100px;
+  }
+
+  footer {
+    font-size: 4px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+}

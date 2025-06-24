@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="left">Mohammed Aftab</div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleMenu(this)">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="right" id="navMenu">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="hero" id="Home">
+        <div class="hero-content">
+          <h1>Hi, I'm Mohammed Aftab</h1>
+          <p>
+            Frontend Developer who loves building responsive and accessible web
+            interfaces
+          </p>
+          <button><a href="http://">Download Resume</a></button>
+        </div>
+      </div>
+
+      <div class="about-section" id="About">
+        <div class="about-section-content">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm Mohammed Aftab, a passionate and detail-oriented Frontend
+            Developer with a strong focus on building responsive, user-friendly,
+            and visually appealing web interfaces. I love turning ideas into
+            interactive experiences using HTML, CSS, JavaScript, and modern
+            frameworks like React. My goal is to create clean, accessible, and
+            high-performance websites that not only look great but also deliver
+            a seamless user experience. I'm constantly learning new technologies
+            and design principles to stay updated in the fast-evolving web
+            world. Let's build something amazing together!
+          </p>
+        </div>
+      </div>
+
+      <div class="skill-section" id="Skills">
+        <div class="skill-section-content">
+          <h1>Skills</h1>
+          <section>
+            <ul class="imageOn">
+              <li>
+                <div>
+                  <img src="html-5.png" alt="" />
+                </div>
+                <h2>HTML</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="css-3.png" alt="" />
+                </div>
+                <h2>CSS</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="img/js.png" alt="" />
+                </div>
+                <h2>JAVASCRIPT</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="img/react.png" alt="" />
+                </div>
+                <h2>REACT</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="nodejs.png" alt="" />
+                </div>
+                <h2>NEXT>JS</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="nodejs.png" alt="" />
+                </div>
+                <h2>NEXT>JS</h2>
+              </li>
+              <li>
+                <div>
+                  <img src="nodejs.png" alt="" />
+                </div>
+                <h2>NEXT>JS</h2>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+
+      <div class="project-section" id="Projects">
+        <div class="project-section-content">
+          <h1>Projects</h1>
+          <div class="project1">
+            <h2>🚀 1. Personal Finance Tracker App</h2>
+            <div class="section">
+              <img spersonalfinance app.jpg" alt="Weather Project Screenshot" />
+            </div>
+            <p>
+              An app that helps users manage their income, expenses, and savings
+              goals. Users can visualize where their money goes and plan budgets
+              effectively.
+            </p>
+            <ul>
+              <li>💡 Key Features:</li>
+              <li>User authentication (sign up, login)</li>
+              <li>
+                Dashboard with income/expense charts (using Chart.js or D3.js)
+              </li>
+              <li>Monthly budgets with alerts</li>
+              <li>Recurring payments & transaction history</li>
+              <li>🔧 Tech Stack:</li>
+              <li>Frontend: React or Vue</li>
+              <li>Backend: Node.js + Express</li>
+              <li>Database: MongoDB / Firebase</li>
+              <li>Charts: Chart.js or Recharts</li>
+            </ul>
+          </div>
+          <div class="project2">
+            <h2>🎓 2. E-Learning Platform</h2>
+            <div class="section">
+              <img src="e learning.jpg" alt="Weather Project Screenshot" />
+            </div>
+            <p>
+              A mini version of platforms like Coursera or Udemy. Users can
+              register, enroll in courses, and track their learning.
+            </p>
+            <ul>
+              <li>💡 Key Features:</li>
+              <li>User roles: Student / Instructor</li>
+              <li>Course creation (title, lessons, video, quiz)</li>
+              <li>Progress tracking per student</li>
+              <li>Quiz system with scoring</li>
+              <li>Video playback (YouTube, local, or Vimeo)</li>
+              <li>Certificate generation upon completion</li>
+            </ul>
+          </div>
+          <div class="project3">
+            <h2>🌤️ Weather App</h2>
+            <div class="section">
+              <img src="weather.jpg" alt="Weather Project Screenshot" />
+            </div>
+            <p>
+              The Weather App is a simple, responsive web application that
+              allows users to check current weather conditions for any city in
+              the world. It uses a clean user interface and displays
+              temperature, weather condition, humidity, wind speed, and location
+              name.
+            </p>
+            <ul>
+              <li>💡 Features:</li>
+              <li>
+                Search by City Name Users can type a city name to fetch
+                real-time weather data.
+              </li>
+              <li>Real-Time Weather Data</li>
+              <li>Responsive Design</li>
+              <li>Clean UI/UX</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <a href="http://">LinkedIn</a>
+        <a href="http://">Github</a>
+        <h1>2025@MohammedAftab . All rights reserved</h1>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
